@@ -52,7 +52,7 @@ namespace Encryption.View
                 case Cmd.ShowAvailableLabs:
                     break;
 
-                case Cmd.Cypher:
+                case Cmd.Cipher:
                     break;
 
                 case Cmd.Decipher:

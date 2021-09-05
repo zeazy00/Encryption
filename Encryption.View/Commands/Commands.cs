@@ -6,8 +6,8 @@
         Exit,
         [EnumString("Show available labs")]
         ShowAvailableLabs,
-        [EnumString("Cypher")]
-        Cypher,
+        [EnumString("Cipher")]
+        Cipher,
         [EnumString("Decipher")]
         Decipher,
     }

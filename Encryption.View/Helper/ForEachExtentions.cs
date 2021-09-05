@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Encryption.View.Helper
 {
-    static class ForeEachExtentions
+    static class ForEachExtentions
     {
         public delegate void IndexedAction<T>(int index, T item);
 
