@@ -3,16 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31612.314
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encryption.Bll", "Encryption.Bll\Encryption.Bll.csproj", "{0B266B50-143D-40B1-8CBB-26D0F7D2C94C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encryption.Bll", "Encryption.Bll\Encryption.Bll.csproj", "{0B266B50-143D-40B1-8CBB-26D0F7D2C94C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encryption.View", "Encryption.View\Encryption.View.csproj", "{BAFF9D3B-1E4E-4542-A0D8-C1200A628896}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encryption.View", "Encryption.View\Encryption.View.csproj", "{BAFF9D3B-1E4E-4542-A0D8-C1200A628896}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encryption.DI", "Encryption.DI\Encryption.DI.csproj", "{A7D69AC9-CA10-477B-8AA3-E3541936BCEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encryption.DI", "Encryption.DI\Encryption.DI.csproj", "{A7D69AC9-CA10-477B-8AA3-E3541936BCEC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{685237AB-7299-49EF-B151-1CA25A9D34B8}"
 	ProjectSection(SolutionItems) = preProject
 		App.config = App.config
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encryption.Config", "Encryption.Config\Encryption.Config.csproj", "{49A3F1EB-C3BE-40F1-A4CD-A59714152427}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +34,10 @@ Global
 		{A7D69AC9-CA10-477B-8AA3-E3541936BCEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7D69AC9-CA10-477B-8AA3-E3541936BCEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7D69AC9-CA10-477B-8AA3-E3541936BCEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49A3F1EB-C3BE-40F1-A4CD-A59714152427}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49A3F1EB-C3BE-40F1-A4CD-A59714152427}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49A3F1EB-C3BE-40F1-A4CD-A59714152427}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49A3F1EB-C3BE-40F1-A4CD-A59714152427}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

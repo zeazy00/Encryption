@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 using Encryption.Bll.Vigenere;
+using Encryption.Config.Setup;
 using Encryption.DI;
 
 namespace Encryption.Config
@@ -12,6 +9,8 @@ namespace Encryption.Config
     public class AlgorithmsConfiguration
     {
         private readonly List<IEncryptionAlg> _algorithms;
+
+        private readonly ConfigFactory _configFactory;
 
         public AlgorithmsConfiguration()
         {
@@ -21,14 +20,9 @@ namespace Encryption.Config
 
         protected virtual void Setup()
         {
-            IAlgorithmConfiguration algorithmConfiguration = GetConfiguration();
+            IAlgorithmConfiguration algorithmConfiguration = _configFactory.GetDefault();
 
             _algorithms.Add(new VigenereAlg(algorithmConfiguration));
-        }
-
-        protected virtual IAlgorithmConfiguration GetConfiguration()
-        {
-            throw new NotImplementedException();
         }
     }
 }

@@ -1,30 +1,24 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Encryption.DI;
 
 namespace Encryption.Bll.Vigenere
 {
-    public class VigenereAlg : IEncryptionAlg
+    public sealed class VigenereAlg : AbstractEncryptionAlg
     {
-        public string AlgorithmName => "Vigenere";
+        public override string AlgorithmName => "Vigenere";
 
-        public int LabNumber => 1;
+        public override int LabNumber => 1;
 
-        public VigenereAlg()
-        {
+        public VigenereAlg(IAlgorithmConfiguration configuration) : base(configuration)
+        { }
 
-        }
-
-        public string Cipher(string source)
+        public override string Cipher(string source)
         {
             throw new NotImplementedException();
         }
 
-        public string Decipher(string source)
+        public override string Decipher(string source)
         {
             throw new NotImplementedException();
         }
