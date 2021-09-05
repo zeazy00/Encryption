@@ -18,6 +18,13 @@ namespace Encryption.View
             cmdArray.ForEach((index, item) => _commands.Add(++index, item));
         }
 
+        Cmd? GetCommand()
+        {
+            bool parseResult = int.TryParse(Console.ReadLine(), out var commandIndex);
+
+            return parseResult ? _commands[commandIndex] : null;
+        }
+
         void Run()
         {
             while (true)

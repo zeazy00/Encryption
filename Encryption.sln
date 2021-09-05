@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31612.314
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encryption.Bll", "Encryption.Bll\Encryption.Bll.csproj", "{0B266B50-143D-40B1-8CBB-26D0F7D2C94C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encryption.View", "Encryption.View\Encryption.View.csproj", "{BAFF9D3B-1E4E-4542-A0D8-C1200A628896}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encryption.App.Cmd", "Encryption.View\Encryption.App.Cmd.csproj", "{BAFF9D3B-1E4E-4542-A0D8-C1200A628896}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encryption.DI", "Encryption.DI\Encryption.DI.csproj", "{A7D69AC9-CA10-477B-8AA3-E3541936BCEC}"
 EndProject

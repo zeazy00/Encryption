@@ -20,13 +20,6 @@ namespace Encryption.View
             _commands.ForEach(x => Console.WriteLine($"{x.Key} - {x.Value.GetStrAttribute()}"));
         }
 
-        Cmd? GetCommand()
-        {
-            bool parseResult = int.TryParse(Console.ReadLine(), out var commandIndex);
-
-            return parseResult ? _commands[commandIndex] : null;
-        }
-
         private static void Clear() => Console.Clear();
     }
 }
