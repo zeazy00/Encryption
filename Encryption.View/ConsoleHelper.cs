@@ -1,18 +1,32 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Reflection;
 
-using Encryption.DI;
+using Encryption.View.Commands;
+using Encryption.View.Helper;
 
+using Cmd = Encryption.View.Commands.Commands;
 namespace Encryption.View
 {
     partial class Program
     {
-        IAlgorithmConfiguration SetupAlgorithmConfiguration()
+        static void Main(string[] args)
         {
-            return new 
+            new Program().Run();
         }
+
+        void OutCommands()
+        {
+            Console.WriteLine("Select action:");
+            _commands.ForEach(x => Console.WriteLine($"{x.Key} - {x.Value.GetStrAttribute()}"));
+        }
+
+        Cmd? GetCommand()
+        {
+            bool parseResult = int.TryParse(Console.ReadLine(), out var commandIndex);
+
+            return parseResult ? _commands[commandIndex] : null;
+        }
+
+        private static void Clear() => Console.Clear();
     }
 }
