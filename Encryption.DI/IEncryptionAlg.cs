@@ -6,7 +6,7 @@ namespace Encryption.DI
     {
         int LabNumber { get; }
 
-        string AlgorithmName {  get; }
+        string AlgorithmName { get; }
 
         string Cipher(string source);
 
