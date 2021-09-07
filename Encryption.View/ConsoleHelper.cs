@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Reflection;
 
 using Encryption.DI.Algorithm.Container;
-using Encryption.View.Commands;
 using Encryption.View.Helper;
 
 using Cmd = Encryption.View.Commands.Commands;

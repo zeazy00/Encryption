@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Encryption.DI.Algorithm
+﻿namespace Encryption.DI.Algorithm
 {
     public interface IEncryptionAlg
     {

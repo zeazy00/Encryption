@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 
 using Encryption.Bll.Vigenere;
 using Encryption.Config.Setup;
@@ -18,7 +17,7 @@ namespace Encryption.Config
         public AlgorithmsConfiguration()
         {
             _algorithms = new();
-            _configFactory = new ();
+            _configFactory = new();
 
             Setup();
         }
