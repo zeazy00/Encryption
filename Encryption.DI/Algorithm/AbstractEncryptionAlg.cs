@@ -1,11 +1,7 @@
-﻿namespace Encryption.DI
+﻿namespace Encryption.DI.Algorithm
 {
     public abstract class AbstractEncryptionAlg : IEncryptionAlg
     {
-        public abstract int LabNumber { get; }
-
-        public abstract string AlgorithmName { get; }
-
         protected Alphabet Alphabet { get; private set; }
 
         protected string Key { get; private set; }

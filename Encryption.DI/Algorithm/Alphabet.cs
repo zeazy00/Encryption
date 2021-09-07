@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Encryption.DI
+namespace Encryption.DI.Algorithm
 {
     public class Alphabet
     {
