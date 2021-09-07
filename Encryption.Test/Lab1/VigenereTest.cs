@@ -5,7 +5,7 @@ using Encryption.Test.Config;
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Encryption.Test
+namespace Encryption.Lab1.Test
 {
     [TestClass]
     public class VigenereTest
