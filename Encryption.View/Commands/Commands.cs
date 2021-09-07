@@ -4,8 +4,8 @@
     {
         [EnumString("Exit")]
         Exit,
-        [EnumString("Show available labs")]
-        ShowAvailableLabs,
+        [EnumString("Select algorithm")]
+        SelectAlgorithm,
         [EnumString("Cipher")]
         Cipher,
         [EnumString("Decipher")]

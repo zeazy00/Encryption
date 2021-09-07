@@ -1,5 +1,6 @@
 ﻿
 using Encryption.DI;
+using Encryption.DI.Algorithm;
 
 namespace Encryption.Config.Setup
 {

@@ -6,6 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="..\App.config" Link="App.config" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Encryption.Config\Encryption.Config.csproj" />
   </ItemGroup>
 
