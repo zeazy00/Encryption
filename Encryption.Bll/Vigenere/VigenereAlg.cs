@@ -1,5 +1,4 @@
-﻿using System;
-using System.Text;
+﻿using System.Text;
 
 using Encryption.DI;
 using Encryption.DI.Algorithm;
@@ -21,6 +20,7 @@ namespace Encryption.Bll.Vigenere
                 int sum = source[i] + Key[i % Key.Length];
                 //положение символа юникод в алфавите
                 int itemInd = sum % Alphabet[0] % Alphabet.Capacity;
+
                 result.Append(Alphabet[itemInd]);
             }
 
@@ -29,7 +29,17 @@ namespace Encryption.Bll.Vigenere
 
         public override string Decipher(string source)
         {
-            return $"deciphered Alphabet: {Alphabet}";
+            StringBuilder result = new();
+
+            for (int i = 0; i < source.Length; i++)
+            {
+                int sum = source[i] - Key[i % Key.Length];
+                int itemInd = (sum + Alphabet.Capacity) % Alphabet.Capacity;
+
+                result.Append(Alphabet[itemInd]);
+            }
+
+            return result.ToString();
         }
     }
 }

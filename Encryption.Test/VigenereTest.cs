@@ -39,5 +39,35 @@ namespace Encryption.Test
             //assert
             Assert.AreEqual("флрыапэкыыгчхтххоанрэе", result);
         }
+
+        [TestMethod]
+        public void DecipherEngExampleFromManual()
+        {
+            //arrange
+            string source = "vpxzgiaxivwpubttmjpwizitwzt";
+            IAlgorithmConfiguration algorithmConfiguration = new AlgConfig("cipher", Alphabet.Eng);
+            IEncryptionAlg encryptionAlg = new VigenereAlg(algorithmConfiguration);
+
+            //act
+            string result = encryptionAlg.Decipher(source);
+
+            //assert
+            Assert.AreEqual("thiscryptosystemisnotsecure", result);
+        }
+
+        [TestMethod]
+        public void DecipherRuExample()
+        {
+            //arrange
+            string source = "флрыапэкыыгчхтххоанрэе";
+            IAlgorithmConfiguration algorithmConfiguration = new AlgConfig("кларнет", Alphabet.Ru);
+            IEncryptionAlg encryptionAlg = new VigenereAlg(algorithmConfiguration);
+
+            //act
+            string result = encryptionAlg.Decipher(source);
+
+            //assert
+            Assert.AreEqual("карлукларыукралкораллы", result);
+        }
     }
 }
