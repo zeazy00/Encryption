@@ -20,5 +20,7 @@ namespace Encryption.DI.Algorithm
         {
             Items = items;
         }
+
+        public char this[int index] => Items[index];
     }
 }
