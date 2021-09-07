@@ -15,12 +15,12 @@ namespace Encryption.Bll.Vigenere
 
         public override string Cipher(string source)
         {
-            throw new NotImplementedException();
+            return "ciphered!";
         }
 
         public override string Decipher(string source)
         {
-            throw new NotImplementedException();
+            return "deciphered";
         }
     }
 }
