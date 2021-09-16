@@ -4,6 +4,7 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 using Newtonsoft.Json;
 
@@ -13,6 +14,8 @@ namespace Encryption.Breaking.Bll.SimpleFrequencyAnalysis
     {
         private readonly Dictionary<char, double> _frequencies;
 
+        //TODO: rename algorithms
+        //TODO: add two algorithms and guess key length by first, second guesses key and length
         public FrequencySetup()
         {
             _frequencies = ExtractFrequencies().OrderBy(x => x.Value)

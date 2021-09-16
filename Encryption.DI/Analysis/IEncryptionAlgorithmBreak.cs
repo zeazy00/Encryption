@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Encryption.DI.Break
+namespace Encryption.DI.Analysis
 {
     public interface IEncryptionAlgorithmBreak
     {
