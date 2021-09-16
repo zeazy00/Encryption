@@ -18,6 +18,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encryption.Config", "Encryp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encryption.Test", "Encryption.Test\Encryption.Test.csproj", "{DEC8DA04-0F79-403A-AA36-1BA22403B0DE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bll", "Bll", "{62F8C757-8808-4331-B1AD-C16601643C35}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encryption.Breaking.Bll", "Encryption.Breaking.Bll\Encryption.Breaking.Bll.csproj", "{BEDBCD14-72BF-498E-9B2A-00096F5F724C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,9 +48,17 @@ Global
 		{DEC8DA04-0F79-403A-AA36-1BA22403B0DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEC8DA04-0F79-403A-AA36-1BA22403B0DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEC8DA04-0F79-403A-AA36-1BA22403B0DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEDBCD14-72BF-498E-9B2A-00096F5F724C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEDBCD14-72BF-498E-9B2A-00096F5F724C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEDBCD14-72BF-498E-9B2A-00096F5F724C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEDBCD14-72BF-498E-9B2A-00096F5F724C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0B266B50-143D-40B1-8CBB-26D0F7D2C94C} = {62F8C757-8808-4331-B1AD-C16601643C35}
+		{BEDBCD14-72BF-498E-9B2A-00096F5F724C} = {62F8C757-8808-4331-B1AD-C16601643C35}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0E9A3E5A-12FB-4E63-8879-4962282AFEAE}
