@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Encryption.Bll\Encryption.Bll.csproj" />
+    <ProjectReference Include="..\Encryption.Breaking.Bll\Encryption.Breaking.Bll.csproj" />
   </ItemGroup>
 
 </Project>
